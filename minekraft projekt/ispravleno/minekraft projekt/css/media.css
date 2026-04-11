@@ -1,0 +1,220 @@
+/* @media (max-width: 768px) {
+    .game-banner {
+        height: 100vh;
+        width: 60vh;
+        background-size:contain;
+        position: fixed;
+  
+    }
+    .mc-font{
+        font-size: 25px;
+    }
+    .skins-label{
+        position:fixed;
+    }
+    .menu {
+       left: 5px;
+       padding: 5px;
+    }
+
+}
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: var(--mc-pink);
+        transform: translateX(-100%);
+        gap:30vh;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner {
+        padding-top: calc(50px + 2em);
+    }
+
+    .inner p {
+        margin: 0
+    }
+} */
+@media (max-width: 768px) {
+    /* .game-banner {
+        height: 100vh;
+        width: 60vh;
+        background-size:contain;
+        position: fixed;
+  
+    } */
+    .mc-font{
+        font-size: 25px;
+    }
+    .skins-label{
+        position:fixed;
+    }
+    .menu {
+       left: 5px;
+       padding: 5px;
+    }
+    .sidebar.active {
+        transform: translateX(0); /* Возвращаем в видимую зону */
+        box-shadow: 5px 0 15px rgba(0,0,0,0.3); /* Добавляем тень для объема */
+    }
+    .rating-section {
+    max-width: 700px; /* Увеличили ширину */
+    margin: 10px auto; 
+    padding: 50px 20px 50px 120px; /* Больше внутренних отступов */
+    background: #f8f8f8;
+    border: 2px solid var(--mc-pink); /* Толстая рамка */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(236, 162, 162, 0.3);
+}
+
+/* Названия игр — делаем их огромными */
+.rating-item label {
+    color: var(--mc-pink);
+    font-size: 20px; /* Увеличили текст */
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Сами поля ввода — делаем их высокими и широкими */
+.rating-item input {
+    background: white;
+    border: 2px solid var(--mc-pink);
+    border-radius: 12px;
+    padding: 10px; /* Больше места внутри */
+    color: var(--mc-pink);
+    font-size: 18px; /* Огромные цифры при вводе */
+    font-family: 'Arial Black', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 30px; /* Расстояние между блоками */
+}
+
+.rating-item input:focus {
+    border-color: #e94560;
+    background: rgb(252, 216, 214);
+    box-shadow: 0 0 15px rgba(233, 69, 96, 0.6);
+}
+
+/* Кнопка — мощная и заметная */
+.send-btn {
+    width: 100%;
+    padding: 5px; /* Очень высокая кнопка */
+    background: #e94560;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 12px; /* Крупный текст */
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background: #ff2e63;
+    transform: scale(1.02); /* Кнопка слегка увеличивается при наведении */
+    box-shadow: 0 0 20px rgba(255, 46, 99, 0.5);
+}
+.rating-item p {
+    color: var(--mc-pink);
+    font-size: 20px; /* Увеличили текст */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+}
+
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px !important;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-align: center; /* Заголовки на мобилках часто лучше смотрятся по центру */
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #ddd;
+    }
+    .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%); /* Изначально спрятано за экраном */
+    will-change: transform; /* Для плавности анимации */
+}
+
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 100vh;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out; /* Плавность выезда */
+    
+    /* Сдвигаем панель влево на всю её ширину, чтобы её не было видно */
+    transform: translateX(-105%); 
+    
+    /* Твой блюр и фон */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Класс, который мы будем добавлять через JS при свайпе */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* (Опционально) Затемнение фона при открытии */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+.overlay.active {
+    display: block;
+}

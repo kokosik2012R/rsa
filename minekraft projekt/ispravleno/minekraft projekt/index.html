@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gamee — Universe</title>
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <link rel="stylesheet" href="./css/rating.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/fortgame.css">
+    <link rel="stylesheet" href="/ispravleno/minekraft projekt/css/footer.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+   
+        <div class="menu">
+            <div class="menu_item">
+                <a href="#minecraft" class="side-link scroll">
+                    <img src="images/logos/arcticons_minecraft.png" alt="MC Icon">
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="#fortnite" class="side-link scroll">
+                    <img src="images/logos/arcticons_fortnite.png" alt="FN Icon">
+                </a>
+            </div>
+            <div class="menu_item">
+                <a href="#roblox" class="side-link scroll">
+                    <img src="images/logos/arcticons_roblox.png" alt="RB Icon">
+                </a>
+            </div>
+ 
+        </div> 
+         <div class="menu_small_icon">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+        
+
+
+        <header class="main-hero">
+            <div class="hero-content">
+                <h1 class="logo">gamee</h1>
+            </div>
+        </header>
+
+
+        <section id="minecraft" class="game-section mc-section">
+            <div class="game-banner" >
+                <h2 class="mc-font">MINECRAFT</h2>
+            </div>
+
+            <div class="container split">
+                <div class="text-content">
+                    <h3 class="mc-title">Minecraft: The Power of a Single Block</h3>
+                    <p>Before it became a global phenomenon, Minecraft started as a small indie project by Swedish
+                        programmer Markus "Notch" Persson in 2009. Inspired by games like *Infiniminer*, Notch wanted to
+                        create a world where players had total freedom to build and destroy. What started as a simple
+                        "Cave Game" made of pixelated blocks evolved into the best-selling video game of all time. It
+                        taught us that you don’t need ultra-realistic graphics to create an infinite universe—all you
+                        need is a pickaxe and your imagination</p>
+                </div>
+                <!-- Скин персонажа -->
+                <div class="char-image">
+                    <img src="images/minecraft.section/skin.png" alt="Minecraft Skin">
+                </div>
+            </div>
+        </section>
+<section class="skins-grid">
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 2.png" alt="Скин 2">
+            <p>Admin_Top</p>
+        </div>
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 4.png" alt="Скин 1">
+            <p>Player_Name</p>
+        </div>
+
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 6.png" alt="Скин 2">
+            <p>Admin_Top</p>
+        </div>
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 7.png" alt="Скин 1">
+            <p>Player_Name</p>
+        </div>
+
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 8.png" alt="Скин 2">
+            <p>Admin_Top</p>
+        </div>
+        <div class="skin-card">
+            <img src="images/minecraft.section/mini skins/image 9.png" alt="Скин 1">
+            <p>Player_Name</p>
+
+</section>
+
+
+            <section id="fortnite" class="game-section fn-section">
+                <div class="game-banner" style="background-image: url('images/fortnite.section/image\ 18.png');">
+                    <h2 class="fn-font">FORTNITE</h2>
+                </div>
+                <div class="container">
+                    <div class="dark-card">
+                        <h3>FORTNITE: FROM SURVIVAL TO BATTLE ROYALE</h3>
+                        <p> Fortnite had a long and surprising journey. Developed by Epic Games, it was first announced
+                            in 2011 as a cooperative survival game called *Save the World*, where players built forts to
+                            fight off monsters. However, everything changed in 2017. Inspired by the rising popularity
+                            of the Battle Royale genre, Epic Games added a free-to-play 100-player mode. With its unique
+                            building mechanics, colorful art style, and epic live events, Fortnite quickly transformed
+                            from a simple shooter into a massive cultural phenomenon.</p>
+                    </div>
+                </div>
+                <div class="lobby-container">
+    <button id="start-game-btn" onclick="toggleGame(true)">
+        <span class="btn-icon">🎮</span> play a mini game
+    </button>
+</div>
+
+<!-- Модальное окно игры -->
+<div id="game-overlay" class="hidden">
+    <div class="game-modal-content">
+        <!-- Кнопка закрытия -->
+        <button class="close-btn" onclick="toggleGame(false)">&times;</button>
+        
+        <div id="fn-world">
+            <div class="sky-bg"></div>
+            
+            <!-- Адаптивный HUD -->
+            <div class="fn-hud">
+                <div class="hud-item glass">
+                    <div class="label">HEALTH</div>
+                    <div class="hp-container"><div id="hp-bar"></div></div>
+                </div>
+                <div class="hud-item glass">
+                    <div class="label">RESOURCES</div>
+                    <div class="mats-val"><span id="mats-count">30</span> <small>WOOD</small></div>
+                </div>
+            </div>
+
+            <div id="spawn-area"></div>
+            
+            <div class="game-controls">
+                <button class="action-btn emote" onclick="playEmote()">🕺 EMOTE</button>
+                <div id="game-status">PROTECT YOUR BASE!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <div id="spawn-area"></div>
+
+
+                <button class="emote-btn" onclick="playEmote()">🕺 EMOTE</button>
+        </div>
+    </div>
+
+    </section>
+
+
+
+    <section id="roblox" class="game-section rb-section">
+        <div class="game-banner" style="background-image: url('images/roblox.section/images.jfif');">
+            <h2 class="rb-font">ROBLOX</h2>
+        </div>
+        <div class="container">
+            <div class="rb-card">
+                <h3>ROBLOX: A UNIVERSE BUILT BY YOU</h3>
+                <p>Roblox is much older than many people think! It was co-founded by David Baszucki and Erik Cassel in
+                    2004, originally under the name *DynaBlocks*, before officially launching as Roblox in 2006. The
+                    vision was unique: instead of making a single game, they created a platform where *anyone* could be
+                    a developer. Today, it’s a massive "multiverse" with millions of user-created experiences, proving
+                    that the best games are the ones we build together.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="rating-section">
+
+        <div class="rating-item">
+            <p>estimate my website</p>
+            <label>Fortnite</label>
+            <input type="number" min="1" max="10" placeholder="10">
+        </div>
+        <div class="rating-item">
+            <label>Roblox</label>
+            <input type="number" min="1" max="10" placeholder="10">
+        </div>
+        <div class="rating-item">
+            <label>Minecraft</label>
+            <input type="number" min="1" max="10" placeholder="10">
+        </div>
+        <button class="send-btn">estimate</button>
+    </div>
+    </div>
+ 
+    <script src="script.js"></script>
+    <script src="anime.min.js"></script>
+
+</body>
+
+   <footer class="game-footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>navigation</h4>
+            <ul>
+                <li><a href="#">Fortnite</a></li>
+                <li><a href="#">Minecraft</a></li>
+                <li><a href="#">Roblox</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contacts</h4>
+            <div class="socials">
+                <a href = "https://github.com/kokosik2012R">github</a>
+                <a href="https://t.me/Whoameeeee">Telegram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 made by Emily
+    </div>
+</footer>
+</html>

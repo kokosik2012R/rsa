@@ -1,0 +1,112 @@
+/* .fn-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    perspective: 1000px;
+}
+
+#fn-world {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    cursor: crosshair;
+}
+
+.fn-hud {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.bar-container {
+    width: 100px;
+    height: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#hp-bar {
+    height: 100%;
+    background: #4ade80;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.enemy {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px red);
+    animation: enemy-float 2s ease-in-out infinite;
+}
+
+.supply-drop {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    animation: fall linear forwards;
+}
+ 
+
+
+.wall {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url('https://img.icons8.com/color/96/wood-log.png') no-repeat center/contain;
+    background-color: rgba(139, 69, 19, 0.8);
+    border: 2px solid #5d4037;
+    border-radius: 5px;
+    animation: build 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+.inner {
+    padding: 1em 0 0 0;
+    width: 60%;
+    height: auto;
+}  */

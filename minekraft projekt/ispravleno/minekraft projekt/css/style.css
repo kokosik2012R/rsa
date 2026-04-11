@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Press+Start+2P&family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:wght@400;700&display=swap');
+:root {
+   
+    --font-logo: 'Titan One', cursive;
+    --font-mc: 'Press Start 2P', cursive;
+    --font-fn: 'Bebas Neue', sans-serif;
+    --font-rb: 'Luckiest Guy', cursive;
+    --font-main: 'Montserrat', sans-serif;
+
+   
+    --mc-pink: #d63384;
+    --rb-purple: #7b2cbf;
+    --bg-dark: #0a0a0a;
+    --fn-purple: #8b5cf6;
+    --fn-blue: #3b82f6;
+    --fn-yellow: #facc15;
+}
+
+* { margin: 0; 
+    padding: 0; 
+     }
+body { font-family: 
+     var(--font-main);
+     color: #333;
+     scroll-behavior:
+     smooth; }
+footer {
+   flex-direction: column;
+}
+.footer_el {
+    flex-direction: column;
+}
+
+.menu {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.menu img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+}
+
+.side-link img {
+    width: 60px;  /* Было 45px */
+    height: 60px; /* Было 45px */
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА (HERO) */
+.main-hero {
+    height: 100vh; /* Теперь картинка занимает 100% высоты экрана */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/mineback.png);
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.2);
+    /* width: 10vh;
+    height: 10vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: var(--font-logo);
+    font-size: 110px;
+    color: white;
+    text-shadow: 5px 5px var(--mc-pink);
+    letter-spacing: -2px;
+}
+
+/* СЕКЦИИ И БАННЕРЫ */
+.game-section { padding-bottom: 80px; }
+.game-banner {
+    height: 600px; /* Баннеры игр станут намного выше и крупнее */
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    background-image: url(../images/minecraft.section/all.png);
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 0 ; 
+    padding: 0 ; }
+.split { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px; }
+
+
+.mc-font { 
+    font-family: var(--font-mc);
+    font-size: 95px; 
+    color: white;
+    background: rgba(255, 255, 255, 0.575);
+    padding: 10px 30px; }
+.fn-font { 
+    font-family: var(--font-fn); 
+    font-size: 120px;
+    color: white; 
+    text-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+.rb-font { 
+    font-family: var(--font-rb);
+     font-size: 110px;
+     color: white; }
+
+
+.mc-title { 
+    color: var(--mc-pink);
+    font-size: 26px;
+    margin-bottom: 15px; 
+    font-weight: 700; }
+.text-content { flex: 1; }
+p { 
+    line-height: 1.6;
+    font-size: 15px;
+    color: #444; }
+
+
+.char-image img {
+     width: 180px;
+     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
+.skins-footer { display: flex;
+     justify-content: space-between;
+      align-items: flex-end;
+       margin-top: 50px; }
+/* .skins-grid { display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 12px;
+     width: 60%; } */
+.skin-box { 
+    height: 110px;
+     background: #f0f0f0;
+     border: 1px solid #ddd;
+     border-radius: 8px; }
+.skins-label { font-family: var(--font-mc);
+    font-size: 30px;
+    color: var(--mc-pink);
+    width: 30%;
+    margin-left: 150px;
+    white-space: nowrap;
+ }
+
+
+.fn-section { 
+    background: var(--bg-dark);
+     color: white; }
+.fn-section p { color: #aaa; }
+.dark-card h3 { 
+    font-size: 18px; 
+    font-weight: 800; 
+    margin-bottom: 15px; }
+
+.rb-card h3 { 
+    color: var(--rb-purple); 
+    font-size: 22px; 
+    font-weight: 800;
+     margin-bottom: 15px; }
+.rb-card {
+     image-rendering: pixelated;
+}
+    
+.mc-section {
+    margin-top: 200px; /* Это создаст пустое пространство (дырку) в 200 пикселей */
+}
+.skins-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skins-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Чтобы скины переносились на новую строку, если их много */
+    font-size: 24px; /* Увеличили текст */
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skin-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skin-card:hover {
+    transform: translateY(-10px); /* Эффект прыжка при наведении */
+}
+
+.skin-card img {
+    width: 150px; /* Ширина скина */
+    height: auto;
+    image-rendering: pixelated; /* ВАЖНО: сохраняет четкость пикселей (не размывает скин) */
+}
+
+
+/* Адаптация: на маленьких экранах чуть уменьшаем масштаб */
+
+
+
+
+@keyframes enemy-float {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.1); }
+}
+
+@keyframes fall {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(550px); }
+}
+
+@keyframes build {
+    from { transform: scale(0); rotate: -20deg; }
+    to { transform: scale(1); rotate: 0deg; }
+}
+
+.emote-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background: var(--fn-yellow);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(250, 204, 21, 0.4);
+}
+
+/* Эффект урона */
+.hit-red {
+    animation: screen-shake 0.2s;
+}
+
+@keyframes screen-shake {
+    0% { transform: translate(1px, 1px); }
+    25% { transform: translate(-3px, 0); }
+    50% { transform: translate(3px, 2px); }
+    100% { transform: translate(0, 0); }
+}

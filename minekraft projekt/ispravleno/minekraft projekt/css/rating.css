@@ -1,0 +1,69 @@
+.rating-section {
+    max-width: 700px; /* Увеличили ширину */
+    margin: 40px auto; 
+    padding: 50px; /* Больше внутренних отступов */
+    background: #f8f8f8;
+    border: 4px solid var(--mc-pink); /* Толстая рамка */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(236, 162, 162, 0.3);
+}
+
+/* Названия игр — делаем их огромными */
+.rating-item label {
+    color: var(--mc-pink);
+    font-size: 24px; /* Увеличили текст */
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Сами поля ввода — делаем их высокими и широкими */
+.rating-item input {
+    background: white;
+    border: 2px solid var(--mc-pink);
+    border-radius: 12px;
+    padding: 20px; /* Больше места внутри */
+    color: var(--mc-pink);
+    font-size: 28px; /* Огромные цифры при вводе */
+    font-family: 'Arial Black', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 30px; /* Расстояние между блоками */
+}
+
+.rating-item input:focus {
+    border-color: #e94560;
+    background: rgb(252, 216, 214);
+    box-shadow: 0 0 15px rgba(233, 69, 96, 0.6);
+}
+
+/* Кнопка — мощная и заметная */
+.send-btn {
+    width: 100%;
+    padding: 25px; /* Очень высокая кнопка */
+    background: #e94560;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 22px; /* Крупный текст */
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background: #ff2e63;
+    transform: scale(1.02); /* Кнопка слегка увеличивается при наведении */
+    box-shadow: 0 0 20px rgba(255, 46, 99, 0.5);
+}
+.rating-item p {
+    color: var(--mc-pink);
+    font-size: 34px; /* Увеличили текст */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+}

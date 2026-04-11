@@ -1,0 +1,69 @@
+/* @media (max-width: 768px) {
+    .game-banner {
+        height: 100vh;
+        width: 60vh;
+        background-size:contain;
+        position: fixed;
+  
+    }
+    .mc-font{
+        font-size: 25px;
+    }
+    .skins-label{
+        position:fixed;
+    }
+    .menu {
+       left: 5px;
+       padding: 5px;
+    }
+
+}
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: var(--mc-pink);
+        transform: translateX(-100%);
+        gap:30vh;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner {
+        padding-top: calc(50px + 2em);
+    }
+
+    .inner p {
+        margin: 0
+    }
+} */
