@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --main-orange: #FF5C28;
     --dark-bg: #1a1a1a;
@@ -549,8 +550,9 @@ body {
 .stick {
     width: 80%;
     height: 5px;
-    background: black;
+    background: var(--main-orange);
     z-index: 1010;
+    border-radius: 50px;
 }
 
 .inner {
@@ -579,9 +581,12 @@ body {
     .menu_small_item {
       
         display: flex;
-        justify-content: center;
         align-items: center;
         color:#ff7707;
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        margin:10px;
+
     }
 
     .menu_small_item:first-child {
@@ -599,6 +604,7 @@ body {
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        position: fixed;
     }
 
     .inner {
@@ -614,4 +620,8 @@ body {
 }
 #header1{
     height: 0px;
+}
+body, html {
+    overflow-x: hidden; /* Запрещает горизонтальную прокрутку */
+    width: 100%;
 }
