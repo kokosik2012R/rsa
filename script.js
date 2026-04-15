@@ -1,4 +1,5 @@
 
+// Ваш существующий код
 let condition = true;
 
 function forward() {
@@ -6,12 +7,10 @@ function forward() {
         targets: '.menu-small',
         translateX: ['-110%', '0'],
         easing: 'easeInOutQuad',
-        direction: 'alternate',
         duration: 1000,
         loop: false
     });
-
-    condition = false
+    condition = false;
 }
 
 function backward() {
@@ -19,14 +18,11 @@ function backward() {
         targets: '.menu-small',
         translateX: ['0', '-110%'],
         easing: 'easeInOutQuad',
-        direction: 'alternate',
         duration: 1000,
         loop: false
     });
-
-    condition = true
+    condition = true;
 }
-
 $('.menu_small_icon').click(function () {
     if (condition) {
         forward();

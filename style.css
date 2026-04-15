@@ -555,6 +555,9 @@ body {
 }
 
 @media (max-width: 650px) {
+    .orange-bg-slice{
+        display: none;
+    }
     .menu {
         display: none;
     }
